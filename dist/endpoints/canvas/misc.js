@@ -326,7 +326,7 @@ function tweet({ displayName, username, imgUrl, content, repliesCount, retweetsC
     displayName = displayName.split(" ").join("%20");
     username = username.split(" ").join("%20");
     return {
-        imgUrl: `${baseUrl}/tweet?displayName=${displayName}&username=${username}&avatar=${imgUrl}&content=${content}&replies=${repliesCount || ""}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
+        imgUrl: `${baseUrl}/tweet?displayname=${displayName}&username=${username}&avatar=${imgUrl}&comment=${content}&replies=${repliesCount || ""}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
     };
 }
 exports.tweet = tweet;
