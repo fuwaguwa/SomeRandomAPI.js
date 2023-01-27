@@ -8,11 +8,12 @@ Documentation: https://some-random-api.ml/docs <br>
 <a href="https://discord.gg/NFkMxFeEWr" ><img src="https://img.shields.io/discord/1020960562710052895?label=Discord%20Server&style=flat-square"></a>
 
 ## Installation
+Package Link: https://www.npmjs.com/package/somerandomapi.js
 ```
 npm i somerandomapi.js
 ```
 
-To use it in your project
+To use it in your project:
 ```javascript
 // import SRA from "../dist/index"
 const SRA = require("somerandomapi.js");
@@ -31,7 +32,7 @@ Every function is documentated for your convenience! <br>
 ![](https://cdn.discordapp.com/attachments/1002189321631187026/1068446639192297513/image.png) <br>
 ![](https://cdn.discordapp.com/attachments/1002189321631187026/1068446195577532456/image.png) <br>
 
-Animal Endpoints Example
+Animal Endpoints Example:
 ```javascript
 const SRA = require("somerandomapi.js");
 
@@ -51,7 +52,7 @@ async function myFunc(animal)
 myFunc()
 ```
 
-Animu Endpoints Example
+Animu Endpoints Example:
 ```javascript
 const SRA = require("somerandomapi.js")
 
@@ -65,7 +66,7 @@ async function myFunc()
 myFunc();
 ```
 
-Canvas Endpoints Example
+Canvas Endpoints Example:
 ```javascript
 const SRA = require("somerandomapi.js")
 
@@ -87,7 +88,7 @@ async function myFunc(url)
 myFunc(url);
 ```
 
-Others Endpoints Example
+Others Endpoints Example:
 ```javascript
 const SRA = require("somerandomapi.js")
 
