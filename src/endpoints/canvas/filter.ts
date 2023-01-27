@@ -117,6 +117,20 @@ function greyscale({ imgUrl, }: CanvasBaseOptions): CanvasResult
 }
 
 /**
+ * Invert an image
+ * @returns inverted image url
+ */
+function invert({ imgUrl, }: CanvasBaseOptions): CanvasResult 
+{
+	if (!isImageAndGif(imgUrl))
+		throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
+
+	return {
+		imgUrl: `${baseUrl}/invert?avatar=${imgUrl}`,
+	};
+}
+
+/**
  * Invert and greyscal an image
  * @returns inverted and greyscaled image url
  */
@@ -189,5 +203,6 @@ export {
 	invertGreyscale,
 	redify,
 	sepia,
+	invert,
 	threshold
 };

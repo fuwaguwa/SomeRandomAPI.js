@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.threshold = exports.sepia = exports.redify = exports.invertGreyscale = exports.greyscale = exports.greenify = exports.tint = exports.brighten = exports.discordBlurpify = exports.blurplify = exports.blueify = void 0;
+exports.threshold = exports.invert = exports.sepia = exports.redify = exports.invertGreyscale = exports.greyscale = exports.greenify = exports.tint = exports.brighten = exports.discordBlurpify = exports.blurplify = exports.blueify = void 0;
 const Utils_1 = require("../../lib/Utils");
 const baseUrl = "https://some-random-api.ml/canvas/filter";
 /**
@@ -93,6 +93,18 @@ function greyscale({ imgUrl, }) {
     };
 }
 exports.greyscale = greyscale;
+/**
+ * Invert an image
+ * @returns inverted image url
+ */
+function invert({ imgUrl, }) {
+    if (!(0, Utils_1.isImageAndGif)(imgUrl))
+        throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
+    return {
+        imgUrl: `${baseUrl}/invert?avatar=${imgUrl}`,
+    };
+}
+exports.invert = invert;
 /**
  * Invert and greyscal an image
  * @returns inverted and greyscaled image url

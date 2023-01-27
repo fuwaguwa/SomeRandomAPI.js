@@ -35,6 +35,11 @@ declare function greenify({ imgUrl, }: CanvasBaseOptions): CanvasResult;
  */
 declare function greyscale({ imgUrl, }: CanvasBaseOptions): CanvasResult;
 /**
+ * Invert an image
+ * @returns inverted image url
+ */
+declare function invert({ imgUrl, }: CanvasBaseOptions): CanvasResult;
+/**
  * Invert and greyscal an image
  * @returns inverted and greyscaled image url
  */
@@ -54,4 +59,4 @@ declare function sepia({ imgUrl, }: CanvasBaseOptions): CanvasResult;
  * @returns thresholded image url
  */
 declare function threshold({ imgUrl, threshold, }: CanvasFilterThresholdOptions): CanvasResult;
-export { blueify, blurplify, discordBlurpify, brighten, tint, greenify, greyscale, invertGreyscale, redify, sepia, threshold };
+export { blueify, blurplify, discordBlurpify, brighten, tint, greenify, greyscale, invertGreyscale, redify, sepia, invert, threshold };
