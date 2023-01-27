@@ -8,7 +8,9 @@ Documentation: https://some-random-api.ml/docs
 <a href="https://discord.gg/NFkMxFeEWr" ><img src="https://img.shields.io/discord/1020960562710052895?label=Discord%20Server&style=flat-square"></a>
 
 ## Installation
-``npm i somerandomapi.js``
+```
+npm i somerandomapi.js`
+```
 
 To use it in your project
 ```javascript
