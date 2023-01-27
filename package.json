@@ -1,6 +1,6 @@
 {
   "name": "somerandomapi.js",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Unofficial API wrapper for Some Random API (with updated endpoints and docs)",
   "main": "dist/index.js",
   "scripts": {
