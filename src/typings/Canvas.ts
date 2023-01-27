@@ -135,6 +135,11 @@ export interface CanvasMiscTweetOptions extends CanvasBaseOptions {
 	username: string;
 
 	/**
+	 * content of the tweet
+	 */
+	content: string;
+
+	/**
 	 * tweet replies count
 	 */
 	repliesCount?: number;

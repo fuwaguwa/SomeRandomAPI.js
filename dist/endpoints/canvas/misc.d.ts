@@ -125,7 +125,7 @@ declare function tonikawaDVD({ imgUrl, }: CanvasBaseOptions): CanvasResult;
  * Generate a picture of a tweet
  * @returns tweet image url
  */
-declare function tweet({ displayName, username, imgUrl, repliesCount, retweetsCount, likesCount, theme, }: CanvasMiscTweetOptions): CanvasResult;
+declare function tweet({ displayName, username, imgUrl, content, repliesCount, retweetsCount, likesCount, theme, }: CanvasMiscTweetOptions): CanvasResult;
 /**
  * Generate an image of a youtube commentt
  * @returns comment image url

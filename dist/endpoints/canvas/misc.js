@@ -320,13 +320,13 @@ exports.tonikawaDVD = tonikawaDVD;
  * Generate a picture of a tweet
  * @returns tweet image url
  */
-function tweet({ displayName, username, imgUrl, repliesCount, retweetsCount, likesCount, theme = "light", }) {
+function tweet({ displayName, username, imgUrl, content, repliesCount, retweetsCount, likesCount, theme = "light", }) {
     if (!(0, Utils_1.isImageAndGif)(imgUrl))
         throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
     displayName = displayName.split(" ").join("%20");
     username = username.split(" ").join("%20");
     return {
-        imgUrl: `${baseUrl}/tweet?displayName=${displayName}&username=${username}&avatar=${imgUrl}&replies=${repliesCount || ""}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
+        imgUrl: `${baseUrl}/tweet?displayName=${displayName}&username=${username}&avatar=${imgUrl}&content=${content}&replies=${repliesCount || ""}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
     };
 }
 exports.tweet = tweet;
