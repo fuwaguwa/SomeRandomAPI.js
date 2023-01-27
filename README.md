@@ -2,8 +2,8 @@
 
 Unofficial wrapper for https://some-random-api.ml/ written in TypeScript with documentations. This wrapper does not support `pokemon`, `premium`, `chatbot` and `welcome` endpoints.
 
-Endpoints: https://some-random-api.ml/endpoints
-Documentation: https://some-random-api.ml/docs
+Endpoints: https://some-random-api.ml/endpoints <br>
+Documentation: https://some-random-api.ml/docs <br>
 
 <a href="https://discord.gg/NFkMxFeEWr" ><img src="https://img.shields.io/discord/1020960562710052895?label=Discord%20Server&style=flat-square"></a>
 
