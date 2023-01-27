@@ -9,7 +9,7 @@ Documentation: https://some-random-api.ml/docs <br>
 
 ## Installation
 ```
-npm i somerandomapi.js`
+npm i somerandomapi.js
 ```
 
 To use it in your project
