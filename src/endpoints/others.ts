@@ -9,7 +9,7 @@ import {
 	OthersLyricsResults,
 	OthersTextEncodingSchemeOptions,
 	OthersTextEncodingSchemeResult
-} from "../typings/Other";
+} from "../typings/Others";
 
 const baseUrl = "https://some-random-api.ml/others/";
 

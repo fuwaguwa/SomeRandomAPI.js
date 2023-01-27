@@ -6,3 +6,7 @@ exports.animal = tslib_1.__importStar(require("./endpoints/animal"));
 exports.animu = tslib_1.__importStar(require("./endpoints/animu"));
 exports.canvas = tslib_1.__importStar(require("./endpoints/canvas"));
 exports.others = tslib_1.__importStar(require("./endpoints/others"));
+tslib_1.__exportStar(require("./typings/Animals"), exports);
+tslib_1.__exportStar(require("./typings/Animu"), exports);
+tslib_1.__exportStar(require("./typings/Canvas"), exports);
+tslib_1.__exportStar(require("./typings/Others"), exports);

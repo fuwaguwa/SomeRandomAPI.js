@@ -1,4 +1,4 @@
-import { OthersBotTokenOptions, OthersBotTokenResult, OthersDictionaryOptions, OthersDictionaryResults, OthersJokeResult, OthersLyricsOptions, OthersLyricsResults, OthersTextEncodingSchemeOptions, OthersTextEncodingSchemeResult } from "../typings/Other";
+import { OthersBotTokenOptions, OthersBotTokenResult, OthersDictionaryOptions, OthersDictionaryResults, OthersJokeResult, OthersLyricsOptions, OthersLyricsResults, OthersTextEncodingSchemeOptions, OthersTextEncodingSchemeResult } from "../typings/Others";
 /**
  * Encode/decode a string in base64
  * @returns encoded/decoded string
