@@ -440,7 +440,7 @@ function youtubeComment({
 	comment = comment.split(" ").join("%20");
 
 	return {
-		imgUrl: `${baseUrl}/comment?username=${username}&avatar=${imgUrl}&comment=${comment}`,
+		imgUrl: `${baseUrl}/youtube-comment?username=${username}&avatar=${imgUrl}&comment=${comment}`,
 	};
 }
 
