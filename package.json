@@ -1,0 +1,49 @@
+{
+  "name": "somerandomapi.js",
+  "version": "1.0.0",
+  "description": "Unofficial API wrapper for Some Random API (with updated endpoints and docs)",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "eslint": "npx eslint --fix \"**/*.ts\"",
+    "prettify": "prettier --write \"**/*.ts\"",
+    "format": "npm run prettify && npm run eslint",
+    "build": "tsc --declaration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuwaguwa/SomeRandomAPI.js.git"
+  },
+  "keywords": [
+    "anime",
+    "canvas",
+    "api",
+    "wrapper",
+    "image",
+    "chatbot",
+    "animal",
+    "fact",
+    "some-random-api"
+  ],
+  "author": "Fuwafuwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuwaguwa/SomeRandomAPI.js/issues"
+  },
+  "homepage": "https://github.com/fuwaguwa/SomeRandomAPI.js#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-standard-with-typescript": "^32.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.3",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  }
+}
