@@ -9,4 +9,4 @@ tslib_1.__exportStar(require("./typings/Animals"), exports);
 tslib_1.__exportStar(require("./typings/Animu"), exports);
 tslib_1.__exportStar(require("./typings/Canvas"), exports);
 tslib_1.__exportStar(require("./typings/Others"), exports);
-exports.default = { animal, animu, canvas, others, };
+module.exports = { animal, animu, canvas, others, };

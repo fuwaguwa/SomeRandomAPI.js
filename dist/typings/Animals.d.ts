@@ -1,5 +1,5 @@
-export type AnimalImageAndFact = "bird" | "cat" | "dog" | "fox" | "kangaroo" | "koala" | "panda" | "raccoon" | "red_panda";
-export type AnimalImage = "bird" | "cat" | "dog" | "fox" | "kangaroo" | "koala" | "panda" | "pikachu" | "raccoon" | "red_panda" | "whale";
+export type AnimalImageAndFact = AnimalFact | "kangaroo" | "raccoon" | "red_panda";
+export type AnimalImage = AnimalFact | "kangaroo" | "pikachu" | "raccoon" | "red_panda" | "whale";
 export type AnimalFact = "bird" | "cat" | "dog" | "fox" | "koala" | "panda";
 export interface AnimalImageAndFactResult extends AnimalImageResult, AnimalFactResult {
 }

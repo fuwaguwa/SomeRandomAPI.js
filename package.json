@@ -1,6 +1,6 @@
 {
   "name": "somerandomapi.js",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Unofficial API wrapper for Some Random API (with updated endpoints and docs)",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,9 @@
     "eslint": "npx eslint --fix \"**/*.ts\"",
     "prettify": "prettier --write \"**/*.ts\"",
     "format": "npm run prettify && npm run eslint",
-    "build": "tsc --declaration"
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "build:docs ": "tsc --declaration"
   },
   "repository": {
     "type": "git",
