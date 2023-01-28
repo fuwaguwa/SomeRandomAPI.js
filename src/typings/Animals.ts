@@ -1,21 +1,11 @@
 export type AnimalImageAndFact =
-	| "bird"
-	| "cat"
-	| "dog"
-	| "fox"
+	| AnimalFact
 	| "kangaroo"
-	| "koala"
-	| "panda"
 	| "raccoon"
 	| "red_panda";
 export type AnimalImage =
-	| "bird"
-	| "cat"
-	| "dog"
-	| "fox"
+	| AnimalFact
 	| "kangaroo"
-	| "koala"
-	| "panda"
 	| "pikachu"
 	| "raccoon"
 	| "red_panda"

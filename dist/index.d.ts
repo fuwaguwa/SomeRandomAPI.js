@@ -2,21 +2,42 @@ import * as animal from "./endpoints/animal";
 import * as animu from "./endpoints/animu";
 import * as canvas from "./endpoints/canvas";
 import * as others from "./endpoints/others";
+
 export * from "./typings/Animals";
 export * from "./typings/Animu";
 export * from "./typings/Canvas";
 export * from "./typings/Others";
-declare const _default: {
-    /** Animal Endpoints */
-    animal: typeof animal;
 
-    /** Animu Endpoints */
-    animu: typeof animu;
+export {
+    /**
+     * Animal Endpoints
+     * 
+     * https://some-random-api.ml/docs/animal
+     * https://some-random-api.ml/docs/facts
+     * https://some-random-api.ml/docs/img
+     */
+    animal,
 
-    /** Canvas Endpoints */
-    canvas: typeof canvas;
+    /**
+     * Animu Endpoints
+     * 
+     * https://some-random-api.ml/docs/animu
+     */
+    animu,
 
-    /** Others Endpoints */
-    others: typeof others;
-};
-export default _default;
+    /**
+     * Canvas Endpoints
+     * 
+     * https://some-random-api.ml/docs/canvas/filter
+     * https://some-random-api.ml/docs/canvas/misc
+     * https://some-random-api.ml/docs/canvas/overlay
+     */
+    canvas,
+
+    /**
+     * Others Endpoints
+     * 
+     * https://some-random-api.ml/docs/others
+     */
+    others
+}

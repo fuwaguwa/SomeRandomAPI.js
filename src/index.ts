@@ -8,4 +8,4 @@ export * from "./typings/Animu";
 export * from "./typings/Canvas";
 export * from "./typings/Others";
 
-export default { animal, animu, canvas, others, };
+module.exports = { animal, animu, canvas, others, };
