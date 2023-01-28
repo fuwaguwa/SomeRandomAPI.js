@@ -2,6 +2,8 @@
 
 Unofficial wrapper for https://some-random-api.ml/ written in TypeScript with documentations. This wrapper does not support `pokemon`, `premium`, `chatbot` and `welcome` endpoints.
 
+UPDATE TO VERSION >=1.4.1 FOR BUG FIXES AND UPDATED DOCS
+
 Endpoints: https://some-random-api.ml/endpoints <br>
 Documentation: https://some-random-api.ml/docs <br>
 
