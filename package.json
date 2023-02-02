@@ -1,6 +1,6 @@
 {
   "name": "somerandomapi.js",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Unofficial API wrapper for Some Random API (with updated endpoints and docs)",
   "main": "dist/index.js",
   "scripts": {
@@ -25,7 +25,8 @@
     "chatbot",
     "animal",
     "fact",
-    "some-random-api"
+    "some-random-api",
+    "somerandomapi"
   ],
   "author": "Fuwafuwa",
   "license": "MIT",

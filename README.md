@@ -74,7 +74,7 @@ const SRA = require("somerandomapi.js")
 
 const url = "https://cdn.discordapp.com/embed/avatars/2.png";
 
-async function myFunc(url) 
+function myFunc(url) 
 {
 	// Filter Endpoints
 	console.log(SRA.canvas.filter.greyscale({ imgUrl: url, }));
