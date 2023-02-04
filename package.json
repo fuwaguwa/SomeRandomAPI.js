@@ -27,6 +27,9 @@
     "fact",
     "some-random-api"
   ],
+  "files": [
+    "./dist"
+  ],
   "author": "Fuwafuwa",
   "license": "MIT",
   "bugs": {
