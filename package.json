@@ -1,15 +1,13 @@
 {
   "name": "somerandomapi.js",
-  "version": "1.4.1",
+  "version": "1.4.4",
   "description": "Unofficial API wrapper for Some Random API (with updated endpoints and docs)",
   "main": "dist/index.js",
   "scripts": {
     "test": "node test/index.js",
-    "pretest": "tsc",
-    "eslint": "eslint --fix \"**/*.ts\"",
+    "eslint": "npx eslint --fix \"**/*.ts\"",
     "prettify": "prettier --write \"**/*.ts\"",
     "format": "npm run prettify && npm run eslint",
-    "prepublishOnly": "npm run build",
     "build": "tsc",
     "build:watch": "tsc -w",
     "build:docs ": "tsc --declaration"
@@ -27,10 +25,8 @@
     "chatbot",
     "animal",
     "fact",
-    "some-random-api"
-  ],
-  "files": [
-    "./dist"
+    "some-random-api",
+    "somerandomapi"
   ],
   "author": "Fuwafuwa",
   "license": "MIT",

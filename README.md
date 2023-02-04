@@ -1,6 +1,8 @@
 # SomeRandomAPI.js
 
-Unofficial wrapper for https://some-random-api.ml/ written in TypeScript with documentations. This wrapper does not support `pokemon`, `premium`, `chatbot` and `welcome` endpoints.
+Unofficial wrapper for https://some-random-api.ml/ written in TypeScript with documentations and updated endpoints. This wrapper does not support `pokemon`, `premium`, `chatbot` and `welcome` endpoints.
+
+UPDATE TO VERSION >=1.4.1 FOR BUG FIXES AND UPDATED DOCS
 
 Endpoints: https://some-random-api.ml/endpoints <br>
 Documentation: https://some-random-api.ml/docs <br>
@@ -72,7 +74,7 @@ const SRA = require("somerandomapi.js")
 
 const url = "https://cdn.discordapp.com/embed/avatars/2.png";
 
-async function myFunc(url) 
+function myFunc(url) 
 {
 	// Filter Endpoints
 	console.log(SRA.canvas.filter.greyscale({ imgUrl: url, }));
