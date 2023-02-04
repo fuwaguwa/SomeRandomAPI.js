@@ -7,7 +7,6 @@
     "test": "node test/index.js",
     "eslint": "eslint --fix \"**/*.ts\"",
     "prettify": "prettier --write \"**/*.ts\"",
-    "prepublishOnly": "npm run build",
     "format": "npm run prettify && npm run eslint",
     "build": "tsc",
     "build:watch": "tsc -w",
