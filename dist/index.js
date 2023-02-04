@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const animal = tslib_1.__importStar(require("./endpoints/animal"));
+const animu = tslib_1.__importStar(require("./endpoints/animu"));
+const canvas = tslib_1.__importStar(require("./endpoints/canvas"));
+const others = tslib_1.__importStar(require("./endpoints/others"));
+tslib_1.__exportStar(require("./typings/Animals"), exports);
+tslib_1.__exportStar(require("./typings/Animu"), exports);
+tslib_1.__exportStar(require("./typings/Canvas"), exports);
+tslib_1.__exportStar(require("./typings/Others"), exports);
+module.exports = { animal, animu, canvas, others, };
