@@ -8,6 +8,7 @@
     "eslint": "eslint --fix \"**/*.ts\"",
     "prettify": "prettier --write \"**/*.ts\"",
     "format": "npm run prettify && npm run eslint",
+    "prepublishOnly": "npm run build",
     "build": "tsc",
     "build:watch": "tsc -w",
     "build:docs ": "tsc --declaration"
