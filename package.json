@@ -1,11 +1,11 @@
 {
   "name": "somerandomapi.js",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Unofficial API wrapper for Some Random API (with updated endpoints and docs)",
   "main": "dist/index.js",
   "scripts": {
     "test": "node test/index.js",
-    "eslint": "npx eslint --fix \"**/*.ts\"",
+    "eslint": "eslint --fix \"**/*.ts\"",
     "prettify": "prettier --write \"**/*.ts\"",
     "format": "npm run prettify && npm run eslint",
     "build": "tsc",
@@ -27,6 +27,9 @@
     "fact",
     "some-random-api",
     "somerandomapi"
+  ],
+  "files": [
+    "./dist"
   ],
   "author": "Fuwafuwa",
   "license": "MIT",
