@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "node test/index.js",
+    "pretest": "tsc",
     "eslint": "eslint --fix \"**/*.ts\"",
     "prettify": "prettier --write \"**/*.ts\"",
     "format": "npm run prettify && npm run eslint",
