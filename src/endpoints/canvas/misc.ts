@@ -417,9 +417,11 @@ function tweet({
 	username = username.split(" ").join("%20");
 
 	return {
-		imgUrl: `${baseUrl}/tweet?displayname=${displayName}&username=${username}&avatar=${imgUrl}&comment=${content}&replies=${
-			repliesCount || ""
-		}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
+		imgUrl: `${baseUrl}/tweet?displayname=${displayName}&username=${username}&avatar=${imgUrl}&comment=${content
+			.split(" ")
+			.join("%20")}&replies=${repliesCount || ""}&retweets=${
+			retweetsCount || ""
+		}&likes=${likesCount || ""}&theme=${theme}`,
 	};
 }
 
