@@ -278,11 +278,10 @@ function genshinNamecard({
 	)
 		throw new Error("Birthday must be in the DD/MM format!");
 
-	username = username.split(" ").join("%20");
-	description = description ? description.split(" ").join("%20") : "";
-
 	return {
-		imgUrl: `${baseUrl}/namecard?avatar=${imgUrl}&birthday=${birthday}&username=${username}&description=${description}`,
+		imgUrl: `${baseUrl}/namecard?avatar=${imgUrl}&birthday=${birthday}&username=${encodeURIComponent(
+			username
+		)}&description=${encodeURIComponent(description)}`,
 	};
 }
 
@@ -293,7 +292,7 @@ function genshinNamecard({
 function noBitches({ item, }: CanvasMiscNoBitchesOptions): CanvasResult 
 {
 	return {
-		imgUrl: `${baseUrl}/nobitches?no=no%20${item.split(" ").join("%20")}`,
+		imgUrl: `${baseUrl}/nobitches?no=no%20${encodeURIComponent(item)}`,
 	};
 }
 
@@ -310,7 +309,7 @@ function oogwayQuote({
 	if (type === "2") endpoint += "2";
 
 	return {
-		imgUrl: `${baseUrl}/${endpoint}?quote=${quote.split(" ").join("%20")}`,
+		imgUrl: `${baseUrl}/${endpoint}?quote=${encodeURIComponent(quote)}`,
 	};
 }
 
@@ -413,15 +412,14 @@ function tweet({
 	if (!isImageAndGif(imgUrl))
 		throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
 
-	displayName = displayName.split(" ").join("%20");
-	username = username.split(" ").join("%20");
-
 	return {
-		imgUrl: `${baseUrl}/tweet?displayname=${displayName}&username=${username}&avatar=${imgUrl}&comment=${content
-			.split(" ")
-			.join("%20")}&replies=${repliesCount || ""}&retweets=${
-			retweetsCount || ""
-		}&likes=${likesCount || ""}&theme=${theme}`,
+		imgUrl: `${baseUrl}/tweet?displayname=${encodeURIComponent(
+			displayName
+		)}&username=${encodeURIComponent(
+			username
+		)}&avatar=${imgUrl}&comment=${encodeURIComponent(content)}&replies=${
+			repliesCount || ""
+		}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
 	};
 }
 
@@ -438,11 +436,10 @@ function youtubeComment({
 	if (!isImageAndGif(imgUrl))
 		throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
 
-	username = username.split(" ").join("%20");
-	comment = comment.split(" ").join("%20");
-
 	return {
-		imgUrl: `${baseUrl}/youtube-comment?username=${username}&avatar=${imgUrl}&comment=${comment}`,
+		imgUrl: `${baseUrl}/youtube-comment?username=${encodeURIComponent(
+			username
+		)}&avatar=${imgUrl}&comment=${encodeURIComponent(comment)}`,
 	};
 }
 

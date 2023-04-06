@@ -219,10 +219,8 @@ function genshinNamecard({ imgUrl, birthday, username, description, }) {
         throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
     if (birthday.match(/^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|[1][0-2])$/i) == null)
         throw new Error("Birthday must be in the DD/MM format!");
-    username = username.split(" ").join("%20");
-    description = description ? description.split(" ").join("%20") : "";
     return {
-        imgUrl: `${baseUrl}/namecard?avatar=${imgUrl}&birthday=${birthday}&username=${username}&description=${description}`,
+        imgUrl: `${baseUrl}/namecard?avatar=${imgUrl}&birthday=${birthday}&username=${encodeURIComponent(username)}&description=${encodeURIComponent(description)}`,
     };
 }
 exports.genshinNamecard = genshinNamecard;
@@ -232,7 +230,7 @@ exports.genshinNamecard = genshinNamecard;
  */
 function noBitches({ item, }) {
     return {
-        imgUrl: `${baseUrl}/nobitches?no=no%20${item.split(" ").join("%20")}`,
+        imgUrl: `${baseUrl}/nobitches?no=no%20${encodeURIComponent(item)}`,
     };
 }
 exports.noBitches = noBitches;
@@ -245,7 +243,7 @@ function oogwayQuote({ type, quote, }) {
     if (type === "2")
         endpoint += "2";
     return {
-        imgUrl: `${baseUrl}/${endpoint}?quote=${quote.split(" ").join("%20")}`,
+        imgUrl: `${baseUrl}/${endpoint}?quote=${encodeURIComponent(quote)}`,
     };
 }
 exports.oogwayQuote = oogwayQuote;
@@ -323,10 +321,8 @@ exports.tonikawaDVD = tonikawaDVD;
 function tweet({ displayName, username, imgUrl, content, repliesCount, retweetsCount, likesCount, theme = "light", }) {
     if (!(0, Utils_1.isImageAndGif)(imgUrl))
         throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
-    displayName = displayName.split(" ").join("%20");
-    username = username.split(" ").join("%20");
     return {
-        imgUrl: `${baseUrl}/tweet?displayname=${displayName}&username=${username}&avatar=${imgUrl}&comment=${content.split(" ").join("%20")}&replies=${repliesCount || ""}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
+        imgUrl: `${baseUrl}/tweet?displayname=${encodeURIComponent(displayName)}&username=${encodeURIComponent(username)}&avatar=${imgUrl}&comment=${encodeURIComponent(content)}&replies=${repliesCount || ""}&retweets=${retweetsCount || ""}&likes=${likesCount || ""}&theme=${theme}`,
     };
 }
 exports.tweet = tweet;
@@ -337,10 +333,8 @@ exports.tweet = tweet;
 function youtubeComment({ username, imgUrl, comment, }) {
     if (!(0, Utils_1.isImageAndGif)(imgUrl))
         throw new Error("URL must be a direct link to a JPG/PNG/GIF image!");
-    username = username.split(" ").join("%20");
-    comment = comment.split(" ").join("%20");
     return {
-        imgUrl: `${baseUrl}/youtube-comment?username=${username}&avatar=${imgUrl}&comment=${comment}`,
+        imgUrl: `${baseUrl}/youtube-comment?username=${encodeURIComponent(username)}&avatar=${imgUrl}&comment=${encodeURIComponent(comment)}`,
     };
 }
 exports.youtubeComment = youtubeComment;
