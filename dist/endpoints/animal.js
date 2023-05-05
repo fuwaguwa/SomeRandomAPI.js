@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.fact = exports.image = exports.imageAndFact = void 0;
 const tslib_1 = require("tslib");
 const node_fetch_1 = tslib_1.__importDefault(require("node-fetch"));
-const baseURL = "https://some-random-api.ml";
+const baseURL = "https://some-random-api.com";
 /**
  * Get a random fact and image of an animal
  * @returns animal fact and image url

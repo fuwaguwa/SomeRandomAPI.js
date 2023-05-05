@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.triggered = exports.wasted = exports.passed = exports.jail = exports.glass = exports.gay = exports.comrade = void 0;
 const Utils_1 = require("../../lib/Utils");
-const baseUrl = "https://some-random-api.ml/canvas/overlay";
+const baseUrl = "https://some-random-api.com/canvas/overlay";
 /**
  * Overlays USSR flags over image
  * @returns comrade image url

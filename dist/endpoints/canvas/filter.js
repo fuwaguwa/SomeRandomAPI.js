@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.threshold = exports.invert = exports.sepia = exports.redify = exports.invertGreyscale = exports.greyscale = exports.greenify = exports.tint = exports.brighten = exports.discordBlurpify = exports.blurplify = exports.blueify = void 0;
 const Utils_1 = require("../../lib/Utils");
-const baseUrl = "https://some-random-api.ml/canvas/filter";
+const baseUrl = "https://some-random-api.com/canvas/filter";
 /**
  * Blueify an image
  * @returns blueified image url

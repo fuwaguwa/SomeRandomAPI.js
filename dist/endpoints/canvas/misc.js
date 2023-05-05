@@ -4,7 +4,7 @@ exports.youtubeComment = exports.tweet = exports.transgender = exports.tonikawaD
 const tslib_1 = require("tslib");
 const Utils_1 = require("../../lib/Utils");
 const node_fetch_1 = tslib_1.__importDefault(require("node-fetch"));
-const baseUrl = "https://some-random-api.ml/canvas/misc";
+const baseUrl = "https://some-random-api.com/canvas/misc";
 /**
  * Add a bisexual border to the image
  * @returns bisexual image url
