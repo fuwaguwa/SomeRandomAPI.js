@@ -7,7 +7,7 @@ import {
 } from "../../typings/Canvas";
 import { isHexColor, isImageAndGif } from "../../lib/Utils";
 
-const baseUrl = "https://some-random-api.ml/canvas/filter";
+const baseUrl = "https://some-random-api.com/canvas/filter";
 
 /**
  * Blueify an image

@@ -5,7 +5,7 @@ import {
 	AnimuQuoteResult
 } from "../typings/Animu";
 
-const baseURL = "https://some-random-api.ml";
+const baseURL = "https://some-random-api.com";
 
 /**
  * Get an anime GIF
