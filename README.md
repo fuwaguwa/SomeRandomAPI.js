@@ -1,11 +1,11 @@
 # SomeRandomAPI.js
 
-Unofficial wrapper for https://some-random-api.ml/ written in TypeScript with documentations and updated endpoints. This wrapper does not support `pokemon`, `premium`, `chatbot` and `welcome` endpoints.
+Unofficial wrapper for https://some-random-api.com/ written in TypeScript with documentations and updated endpoints. This wrapper does not support `pokemon`, `premium`, `chatbot` and `welcome` endpoints.
 
 UPDATE TO VERSION >=1.4.1 FOR BUG FIXES AND UPDATED DOCS
 
-Endpoints: https://some-random-api.ml/endpoints <br>
-Documentation: https://some-random-api.ml/docs <br>
+Endpoints: https://some-random-api.com/endpoints <br>
+Documentation: https://some-random-api.com/docs <br>
 
 <a href="https://discord.gg/NFkMxFeEWr" ><img src="https://img.shields.io/discord/1020960562710052895?label=Discord%20Server&style=flat-square"></a>
 
