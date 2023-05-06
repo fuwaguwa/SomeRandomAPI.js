@@ -15,7 +15,7 @@ import {
 } from "../../typings/Canvas";
 import fetch from "node-fetch";
 
-const baseUrl = "https://some-random-api.ml/canvas/misc";
+const baseUrl = "https://some-random-api.com/canvas/misc";
 
 /**
  * Add a bisexual border to the image

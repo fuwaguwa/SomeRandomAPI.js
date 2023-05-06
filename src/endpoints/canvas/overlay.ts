@@ -1,7 +1,7 @@
 import { CanvasBaseOptions, CanvasResult } from "../../typings/Canvas";
 import { isImageAndGif } from "../../lib/Utils";
 
-const baseUrl = "https://some-random-api.ml/canvas/overlay";
+const baseUrl = "https://some-random-api.com/canvas/overlay";
 
 /**
  * Overlays USSR flags over image

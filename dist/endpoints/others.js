@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.lyrics = exports.joke = exports.define = exports.generateToken = exports.binary = exports.base64 = void 0;
 const tslib_1 = require("tslib");
 const node_fetch_1 = tslib_1.__importDefault(require("node-fetch"));
-const baseUrl = "https://some-random-api.ml/others/";
+const baseUrl = "https://some-random-api.com/others/";
 /**
  * Encode/decode a string in base64
  * @returns encoded/decoded string

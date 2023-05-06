@@ -11,7 +11,7 @@ import {
 	OthersTextEncodingSchemeResult
 } from "../typings/Others";
 
-const baseUrl = "https://some-random-api.ml/others/";
+const baseUrl = "https://some-random-api.com/others/";
 
 /**
  * Encode/decode a string in base64

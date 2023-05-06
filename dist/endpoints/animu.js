@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.quote = exports.gif = void 0;
 const tslib_1 = require("tslib");
 const node_fetch_1 = tslib_1.__importDefault(require("node-fetch"));
-const baseURL = "https://some-random-api.ml";
+const baseURL = "https://some-random-api.com";
 /**
  * Get an anime GIF
  * @returns gif url

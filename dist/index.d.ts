@@ -12,32 +12,32 @@ export {
     /**
      * Animal Endpoints
      * 
-     * https://some-random-api.ml/docs/animal
-     * https://some-random-api.ml/docs/facts
-     * https://some-random-api.ml/docs/img
+     * https://some-random-api.com/docs/animal
+     * https://some-random-api.com/docs/facts
+     * https://some-random-api.com/docs/img
      */
     animal,
 
     /**
      * Animu Endpoints
      * 
-     * https://some-random-api.ml/docs/animu
+     * https://some-random-api.com/docs/animu
      */
     animu,
 
     /**
      * Canvas Endpoints
      * 
-     * https://some-random-api.ml/docs/canvas/filter
-     * https://some-random-api.ml/docs/canvas/misc
-     * https://some-random-api.ml/docs/canvas/overlay
+     * https://some-random-api.com/docs/canvas/filter
+     * https://some-random-api.com/docs/canvas/misc
+     * https://some-random-api.com/docs/canvas/overlay
      */
     canvas,
 
     /**
      * Others Endpoints
      * 
-     * https://some-random-api.ml/docs/others
+     * https://some-random-api.com/docs/others
      */
     others
 }

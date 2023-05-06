@@ -8,7 +8,7 @@ import {
 	AnimalImageResult
 } from "../typings/Animals";
 
-const baseURL = "https://some-random-api.ml";
+const baseURL = "https://some-random-api.com";
 
 /**
  * Get a random fact and image of an animal
